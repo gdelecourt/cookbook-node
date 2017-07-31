@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+  h1 Liste des recettes
+  ul
+    each recette in recettes
+      li= recette.name
+  a(href="/recettes/create") Nouvelle recette
