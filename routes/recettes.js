@@ -11,4 +11,7 @@ router.get('/create', recette.create);
 // Save recette
 router.post('/save', recette.save);
 
+// Show recette
+router.get('/show/:id', recette.show);
+
 module.exports = router;

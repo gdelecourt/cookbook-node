@@ -2,7 +2,10 @@ extends ../layout
 
 block content
   h1 Liste des recettes
-  ul
+  table
     each recette in recettes
-      li= recette.name
+      tr
+        td= recette.name
+        td 
+          a(href="/recettes/show/"+recette.id) Voir
   a(href="/recettes/create") Nouvelle recette

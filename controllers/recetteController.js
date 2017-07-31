@@ -29,6 +29,18 @@ recetteController.save = function(req, res) {
   });
 }
 
+recetteController.show = function(req, res) {
+  Recette.findOne({_id: req.params.id}).exec(function (err, recette) {
+    if (err) {
+      console.log("Error:", err);
+    }
+    else {
+      res.render("../views/recettes/show", {recette: recette});
+    }
+  });
+};
+
+
 recetteController.create = function(req, res){
   res.render('../views/recettes/create');
 }
