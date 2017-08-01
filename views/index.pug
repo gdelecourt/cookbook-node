@@ -1,5 +1,27 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.jumbotron
+    div.container
+      h1.display-3 Gestion des recettes
+      p Bienvenue sur la nouvelle application
+  div.container
+    div.row
+      div.col-md-4
+        h2 Ingredients
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        p
+          a(href='#', class='btn btn-secondary') Voir plus &raquo;
+      div.col-md-4
+        h2 Recettes
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        p
+          a(href='#', class='btn btn-secondary') Voir plus &raquo;
+      div.col-md-4
+        h2 Autres
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        p
+          a(href='#', class='btn btn-secondary') Voir plus &raquo;
+  hr.mt-5
+  footer
+    p.ml-5 Envie 2017

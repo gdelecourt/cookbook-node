@@ -49,6 +49,10 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+if (app.get('env') === 'development') {
+  app.locals.pretty = true;
+}
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
