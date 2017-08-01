@@ -6,10 +6,13 @@ nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse.fixed-top
     ul.navbar-nav.mr-auto
       li.nav-item.active
         a.nav-link(href='#') Home 
-      li.nav-item
-        a.nav-link(href='#') Ingredients
       li.nav-item.dropdown
-        a#dropdown01.nav-link.dropdown-toggle(href='http://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Recettes
+        a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Ingrédients
         .dropdown-menu(aria-labelledby='dropdown01')
+          a.dropdown-item(href='/ingredients') Liste
+          a.dropdown-item(href='/ingredients/create') Nouvel ingrédient
+      li.nav-item.dropdown
+        a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Recettes
+        .dropdown-menu(aria-labelledby='dropdown02')
           a.dropdown-item(href='/recettes') Liste
           a.dropdown-item(href='/recettes/create') Nouvelle recette

@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Liste des ingrédients
+  table
+    each ingredient in ingredients
+      tr
+        td= ingredient.name
+        td= ingredient.category
+        td 
+          a(href="/ingredients/show/"+ingredient.id) Voir
+  a(href="/ingredients/create") Nouvel ingrédient

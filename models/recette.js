@@ -5,6 +5,8 @@ var Schema = mongoose.Schema;
 
 var recetteSchema = new Schema({
     name          : String,
+    photo         : String,
+    parts         : Number, // nb de personne
     date          : Date,
 });
 
